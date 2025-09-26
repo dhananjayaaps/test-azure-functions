@@ -18,7 +18,7 @@ const swaggerOptions = {
     },
     servers: [
       { url: `http://localhost:${port}`, description: 'Local server' },
-      { url: 'https://your-backend-url.azurewebsites.net', description: 'Azure deployed server' }, // Replace with your Azure URL
+      { url: 'https://testapimsineth-f4ejgtg7dahce6d8.canadacentral-01.azurewebsites.net', description: 'Azure deployed server' },
     ],
   },
   apis: ['./index.js'], // Point to this file for JSDoc comments
