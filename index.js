@@ -134,6 +134,11 @@ app.post('/pets', (req, res) => {
   res.status(201).json(newPet);
 });
 
+app.get('/swagger.json', (req, res) => {
+  res.setHeader('Content-Type', 'application/json');
+  res.send(swaggerDocs);
+});
+
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
   console.log(`Swagger UI available at http://localhost:${port}/api-docs`);
